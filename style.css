@@ -233,6 +233,9 @@ html, body {
   animation-name: eid_svg_red;
   animation-fill-mode: forwards;
 }
+.mubarak .logo svg .cls-8 {
+  fill: #fff;
+}
 .mubarak .eid-content .happy {
   animation-delay: 15s;
   animation-duration: 1.5s;
@@ -340,7 +343,7 @@ html, body {
 }
 @keyframes eid_svg_red {
   100% {
-    fill: #FF0202;
+    fill: #fff;
   }
 }
 @keyframes eid_me {
@@ -526,7 +529,7 @@ html, body {
 
   @keyframes eid_me_img {
     100% {
-      max-width: 250px;
+      max-width: 215px;
     }
   }
 }
