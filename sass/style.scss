@@ -216,7 +216,44 @@ html, body {
 	}
 } 
 
+/*************************
+	WEBSITE COUNTER
+*************************/
+.website-counter {
+	top: 0;
+	opacity: 0;
+	position: absolute;
+	padding-bottom: 50px;
+	left: calc(50% - 90px);
 
+	animation-delay: 16s;
+  	animation-duration: 3s;
+  	animation-fill-mode: forwards;
+  	animation-name: website-counter;
+
+	div {
+		width: 50%;
+		display: inline;
+
+		img.counterimg { 
+			vertical-align: top;
+		}
+
+		svg {
+			height: 88px !important;
+		}
+		rect {
+			
+			&:first-child {
+				height: 88px !important;
+			}
+		}
+	}
+
+	&.web-minus {
+		margin-top: -24px;
+	}
+}
 
 .mubarak { 
 
@@ -401,6 +438,15 @@ html, body {
 @keyframes eid_me_img {
 	100% {
 		max-width: 180px;
+	}
+}
+
+@keyframes website-counter {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
 	}
 }
 

@@ -215,6 +215,37 @@ html, body {
   text-decoration: none;
 }
 
+/*************************
+	WEBSITE COUNTER
+*************************/
+.website-counter {
+  top: 0;
+  opacity: 0;
+  position: absolute;
+  padding-bottom: 50px;
+  left: calc(50% - 90px);
+  animation-delay: 16s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-name: website-counter;
+}
+.website-counter div {
+  width: 50%;
+  display: inline;
+}
+.website-counter div img.counterimg {
+  vertical-align: top;
+}
+.website-counter div svg {
+  height: 88px !important;
+}
+.website-counter div rect:first-child {
+  height: 88px !important;
+}
+.website-counter.web-minus {
+  margin-top: -24px;
+}
+
 .mubarak .logo {
   animation-delay: 4s;
   animation-duration: 6s;
@@ -365,6 +396,14 @@ html, body {
     max-width: 180px;
   }
 }
+@keyframes website-counter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /************************* 
 	Media Queries
 ///**********************/
@@ -443,6 +482,14 @@ html, body {
   h2, .h2 {
     font-size: 23px;
     line-height: 33px;
+  }
+
+  /*************************
+  	WEBSITE COUNTER
+  *************************/
+  .website-counter {
+    top: 73%;
+    left: 0;
   }
 
   .mubarak .countdown-own .coustom-clock .hours, .mubarak .countdown-own .coustom-clock .minutes, .mubarak .countdown-own .coustom-clock .seconds, .mubarak .countdown-own .coustom-clock .date {
