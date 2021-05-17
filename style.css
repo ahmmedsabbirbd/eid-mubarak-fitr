@@ -488,8 +488,11 @@ html, body {
   	WEBSITE COUNTER
   *************************/
   .website-counter {
-    top: 73%;
     left: 0;
+    top: calc(100% - 60px);
+  }
+  .website-counter img {
+    width: 70px;
   }
 
   .mubarak .countdown-own .coustom-clock .hours, .mubarak .countdown-own .coustom-clock .minutes, .mubarak .countdown-own .coustom-clock .seconds, .mubarak .countdown-own .coustom-clock .date {

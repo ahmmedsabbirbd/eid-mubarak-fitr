@@ -104,8 +104,12 @@ h2, .h2 {font-size: 23px; line-height: 33px; }
 	WEBSITE COUNTER
 *************************/
 .website-counter {
-	top: 73%;
     left: 0;
+	top: calc(100% - 60px);
+
+	img {
+		width: 70px;
+	}
 }
 
 .mubarak {
