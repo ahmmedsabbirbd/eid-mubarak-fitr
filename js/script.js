@@ -71,7 +71,7 @@ window.onload = function() {
 };
 
 /// coming eid coundown(
-$('#clock').countdown('2021/5/14 00:00:00')
+$('#clock').countdown('2022/5/3 00:00:00')
   .on('update.countdown', function(event) {
    var format = '<div class="coustom-clock"><div class="date"><span class="d">%D</span> <br>Date</div><div class="hours"><span class="h">%H</span> <br>Hours</div><div class="minutes"><span class="m">%M</span> <br>Minutes</div><div class="seconds"><span class="s">%S</span> <br>Seconds</div></div>';
     $(this).html(event.strftime(format));
